@@ -73,10 +73,12 @@ class CountryPage extends StatelessWidget {
                   const SizedBox(height: 12),
                   Wrap(
                     spacing: 12,
+                    runSpacing: 10,
                     children:
                         country.timezones
                             .map(
                               (tz) => Chip(
+                                padding: EdgeInsets.all(5),
                                 label: Text(
                                   tz,
                                   style: const TextStyle(
