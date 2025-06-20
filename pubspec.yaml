@@ -1,0 +1,60 @@
+name: countries_app
+description: >
+  A Flutter application that fetches and displays data about countries from a public REST API.
+  Demonstrates API integration, state management, UI development from a design, and local data persistence.
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  auto_route: ^9.3.0+1
+  cached_network_image: ^3.4.1
+  device_info_plus: ^11.2.1
+  device_preview:
+    git:
+      url: https://github.com/nahomderese/flutter_device_preview.git
+      path: device_preview
+      ref: c3bfcb9ced73596d6ae70ee4e9c285b6c15c172b
+  dio: ^5.7.0
+  dio_http_formatter: ^3.3.0
+  equatable: ^2.0.7
+  flutter_launcher_icons: ^0.14.3
+  flutter_riverpod: ^2.6.1
+  flutter_secure_storage: ^9.2.4
+  flutter_spinkit: ^5.2.1
+  flutter_staggered_grid_view: ^0.7.0
+  freezed: ^3.0.4
+  freezed_annotation: ^3.0.0
+  gap: ^3.0.1
+  intl: ^0.19.0
+  json_annotation: ^4.9.0
+  logger: ^2.5.0
+  riverpod_annotation: ^2.6.1
+  shared_preferences: ^2.5.3
+  shimmer: ^3.0.0
+  smooth_page_indicator: ^1.2.0
+  
+dev_dependencies:
+  auto_route_generator: ^9.3.1
+  build_runner: ^2.4.14
+  flutter_lints: ^5.0.0
+  flutter_test:
+    sdk: flutter
+  json_serializable: ^6.9.3
+  riverpod_generator: ^2.6.5
+  riverpod_lint: ^2.6.5
+  very_good_analysis: ^7.0.0
+
+dependency_overrides:
+  device_frame:
+    git:
+      url: https://github.com/nahomderese/flutter_device_preview.git
+      path: device_frame
+      ref: c3bfcb9ced73596d6ae70ee4e9c285b6c15c172b
+
+flutter:
+  uses-material-design: true
